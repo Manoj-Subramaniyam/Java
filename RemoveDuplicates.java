@@ -1,5 +1,9 @@
 package week1;
 
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 public class RemoveDuplicates {
 	
 	/*
@@ -30,6 +34,15 @@ public class RemoveDuplicates {
 			}
 		}
 		System.out.println(text);
+		
+		//using Set
+		int[]  nums= {1,2,3,4,3,5,6};
+		Set<Integer> nums1 = new LinkedHashSet<Integer>();
+		for (int i=0;i<nums.length-1;i++) {
+			
+			nums1.add(nums[i]);
+		}
+		System.out.println(nums1);
 	}
 
 }
